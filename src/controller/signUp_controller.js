@@ -1,14 +1,20 @@
 const bcrypt = require('bcrypt');
 const authDB = require('../DbConfig/authDb.js');
 
-async function findUserByUsername(username) {
+async function userValidation(user) {
   const dbo = await authDB.authDB();
-  const query = { username };
+  const query = { username: user.username };
   const result = await dbo.collection('users').find(query).toArray();
+  console.log(result);
   if (result.length === 0) {
     return false;
   }
-  return result[0];
+  const hash = result[0].password;
+  const isMatch = await bcrypt.compare(user.password, hash);
+  if (isMatch) {
+    return result[0];
+  }
+  return false;
 }
 
 async function registerUser(userdetails) {
@@ -30,4 +36,4 @@ async function registerUser(userdetails) {
 }
 
 module.exports.registerUser = registerUser;
-module.exports.findUserByUsername = findUserByUsername;
+module.exports.userValidation = userValidation;
