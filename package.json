@@ -4,18 +4,28 @@
   "description": "authentication-module",
   "main": "auth.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm-run-all --parallel eslintwatch open-src",
+    "eslintwatch": "npm run eslint --watch",
+    "eslint": "esw src",
+    "open-src": "nodemon --exec babel-node src/authServer.js --no-deprecation",
+    "test": "logging='off' nyc mocha --require babel-polyfill --compilers js:babel-register --no-deprecation --timeout 20000 --exit"
   },
   "author": "vishnu",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
     "eslint": "^5.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.11.1"
+    "eslint-plugin-react": "^7.11.1",
+    "nyc": "^13.0.1",
+    "superagent": "^4.0.0-beta.5"
   },
   "dependencies": {
     "app-root-path": "^2.1.0",
@@ -23,10 +33,14 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.3.0",
     "mongodb": "^3.1.6",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.4",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "session": "^0.1.0",
+    "supertest": "^3.3.0",
     "winston": "^3.1.0"
   }
 }
