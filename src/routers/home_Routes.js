@@ -1,10 +1,12 @@
 import { Router } from 'express';
-// const logger = require('../common/winston_config');
 
 const home = Router();
 
 home.get('/', (req, res) => {
-  res.send('Welcome to Venom Authentication API Service');
+  res.render('home');
 });
 
+home.get('/home', (req, res) => {
+  res.render('home');
+});
 export default home;

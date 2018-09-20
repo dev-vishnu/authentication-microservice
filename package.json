@@ -8,7 +8,7 @@
     "eslintwatch": "npm run eslint --watch",
     "eslint": "esw src",
     "open-src": "nodemon --exec babel-node src/authServer.js --no-deprecation",
-    "test": "logging='off' nyc mocha --require babel-polyfill --compilers js:babel-register --no-deprecation --timeout 20000 --exit"
+    "test": "logging='off' db='testAuthDb' nyc mocha --require babel-polyfill --compilers js:babel-register --no-deprecation --timeout 20000 --exit"
   },
   "author": "vishnu",
   "license": "ISC",
@@ -31,6 +31,7 @@
     "app-root-path": "^2.1.0",
     "bcrypt": "^3.0.0",
     "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
     "jsonwebtoken": "^8.3.0",
