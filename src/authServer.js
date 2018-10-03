@@ -8,7 +8,7 @@ import auth from './routers/auth_Routes';
 import home from './routers/home_Routes';
 import apiKeyGen from './routers/apiKey_Gen_Routes';
 
-// import verifyToken from './common/verify_token_middleware';
+import verifyToken from './common/verify_token_middleware';
 
 const app = express();
 app.set('view engine', 'ejs');
@@ -18,7 +18,7 @@ app.use(urlencoded({ extended: true }));
 app.use(json());
 app.use(cors());
 app.use('/', home);
-app.use('/auth', auth);
+app.use('/auth', verifyToken, auth);
 app.use('/getApiKey', apiKeyGen);
 app.listen(2000);
 

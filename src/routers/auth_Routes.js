@@ -19,7 +19,6 @@ auth.post('/register', async (req, res) => {
 
 auth.post('/login', async (req, res) => {
   try {
-    console.log(req.body);
     const user = req.body;
     winston.logger.info(`login request for ${user.username} recieved`);
     const result = await userValidation(user);

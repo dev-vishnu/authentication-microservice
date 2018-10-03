@@ -1411,3 +1411,86 @@
 {"message":"::1 - - [28/Sep/2018:13:04:25 +0000] \"OPTIONS /auth/login HTTP/1.1\" 204 0 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\"\n","level":"info"}
 {"message":"login request for vishnu recieved","level":"info"}
 {"message":"::1 - - [28/Sep/2018:13:04:29 +0000] \"POST /auth/login HTTP/1.1\" 200 6 \"http://localhost:3000/admin\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:05:56:30 +0000] \"GET /getApiKey?app_name=hello HTTP/1.1\" 200 144 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:05:56:31 +0000] \"POST /auth/register HTTP/1.1\" 200 5 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:05:56:33 +0000] \"POST /auth/register HTTP/1.1\" 200 5 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"login request for vishnu recieved","level":"info"}
+{"operationTime":"6608005565140434945","ok":0,"errmsg":"not authorized on testAuthDb to execute command { find: \"users\", filter: { username: \"vishnu\" }, returnKey: false, showRecordId: false, $clusterTime: { clusterTime: Timestamp(1538546189, 1), signature: { hash: BinData(0, 639450E187A375C829A4B72B1D7AC8BE1DE3D5BA), keyId: 6605495143871021057 } }, lsid: { id: UUID(\"963e3398-694e-42ed-a0b5-fa93aa9f2017\") }, $db: \"testAuthDb\" }","code":13,"codeName":"Unauthorized","$clusterTime":{"clusterTime":"6608005565140434945","signature":{"hash":"Y5RQ4YejdcgppLcrHXrIvh3j1bo=","keyId":"6605495143871021057"}},"name":"MongoError","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:05:56:34 +0000] \"POST /auth/login HTTP/1.1\" 200 5 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"login request for zyx recieved","level":"info"}
+{"operationTime":"6608005565140434945","ok":0,"errmsg":"not authorized on testAuthDb to execute command { find: \"users\", filter: { username: \"zyx\" }, returnKey: false, showRecordId: false, $clusterTime: { clusterTime: Timestamp(1538546189, 1), signature: { hash: BinData(0, 639450E187A375C829A4B72B1D7AC8BE1DE3D5BA), keyId: 6605495143871021057 } }, lsid: { id: UUID(\"dcaa5b72-c693-474a-853f-23874671230f\") }, $db: \"testAuthDb\" }","code":13,"codeName":"Unauthorized","$clusterTime":{"clusterTime":"6608005565140434945","signature":{"hash":"Y5RQ4YejdcgppLcrHXrIvh3j1bo=","keyId":"6605495143871021057"}},"name":"MongoError","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:05:56:35 +0000] \"POST /auth/login HTTP/1.1\" 200 5 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:05:56:37 +0000] \"POST /auth/register HTTP/1.1\" 200 5 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:05:56:38 +0000] \"POST /auth/register HTTP/1.1\" 200 5 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"login request for vishnu recieved","level":"info"}
+{"operationTime":"6608005608090107905","ok":0,"errmsg":"not authorized on testAuthDb to execute command { find: \"users\", filter: { username: \"vishnu\" }, returnKey: false, showRecordId: false, $clusterTime: { clusterTime: Timestamp(1538546199, 1), signature: { hash: BinData(0, 2156DD9C4FFBE367F612389AB1F17C92D2F41774), keyId: 6605495143871021057 } }, lsid: { id: UUID(\"ffca813d-090a-433c-a092-ec2f8e583d40\") }, $db: \"testAuthDb\" }","code":13,"codeName":"Unauthorized","$clusterTime":{"clusterTime":"6608005608090107905","signature":{"hash":"IVbdnE/742f2EjiasfF8ktL0F3Q=","keyId":"6605495143871021057"}},"name":"MongoError","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:05:56:40 +0000] \"POST /auth/login HTTP/1.1\" 200 5 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"login request for zyx recieved","level":"info"}
+{"operationTime":"6608005642449846273","ok":0,"errmsg":"not authorized on testAuthDb to execute command { find: \"users\", filter: { username: \"zyx\" }, returnKey: false, showRecordId: false, $clusterTime: { clusterTime: Timestamp(1538546207, 1), signature: { hash: BinData(0, 442BDD12BE644F678B1622DF335A9F39E7EE66B1), keyId: 6605495143871021057 } }, lsid: { id: UUID(\"424502c1-c8f9-4025-9359-8c88d58add8d\") }, $db: \"testAuthDb\" }","code":13,"codeName":"Unauthorized","$clusterTime":{"clusterTime":"6608005642449846273","signature":{"hash":"RCvdEr5kT2eLFiLfM1qfOefuZrE=","keyId":"6605495143871021057"}},"name":"MongoError","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:05:56:51 +0000] \"POST /auth/login HTTP/1.1\" 200 5 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:05:56:52 +0000] \"GET / HTTP/1.1\" 200 408 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:05:56:52 +0000] \"GET /home HTTP/1.1\" 200 408 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:02:09 +0000] \"GET /getApiKey?app_name=hello HTTP/1.1\" 200 144 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"ok":0,"errmsg":"Authentication failed.","code":18,"codeName":"AuthenticationFailed","operationTime":"6608007111328661505","$clusterTime":{"clusterTime":"6608007111328661505","signature":{"hash":"GzhrMddo49zmxR2YpLlFnGxw6rs=","keyId":"6605495143871021057"}},"name":"MongoError","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:02:30 +0000] \"POST /auth/register HTTP/1.1\" 200 5 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"ok":0,"errmsg":"Authentication failed.","code":18,"codeName":"AuthenticationFailed","operationTime":"6608007111328661505","$clusterTime":{"clusterTime":"6608007111328661505","signature":{"hash":"GzhrMddo49zmxR2YpLlFnGxw6rs=","keyId":"6605495143871021057"}},"name":"MongoError","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:02:30 +0000] \"POST /auth/register HTTP/1.1\" 200 5 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"login request for vishnu recieved","level":"info"}
+{"ok":0,"errmsg":"Authentication failed.","code":18,"codeName":"AuthenticationFailed","operationTime":"6608007154278334465","$clusterTime":{"clusterTime":"6608007154278334465","signature":{"hash":"eHMJhmI0QQTHsCSDpwDLzIyvEQ8=","keyId":"6605495143871021057"}},"name":"MongoError","level":"info"}
+{"level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:02:41 +0000] \"POST /auth/login HTTP/1.1\" 200 5 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"login request for zyx recieved","level":"info"}
+{"ok":0,"errmsg":"Authentication failed.","code":18,"codeName":"AuthenticationFailed","operationTime":"6608007154278334465","$clusterTime":{"clusterTime":"6608007154278334465","signature":{"hash":"eHMJhmI0QQTHsCSDpwDLzIyvEQ8=","keyId":"6605495143871021057"}},"name":"MongoError","level":"info"}
+{"level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:02:44 +0000] \"POST /auth/login HTTP/1.1\" 200 5 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:02:44 +0000] \"POST /auth/register HTTP/1.1\" 401 12 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:02:44 +0000] \"POST /auth/register HTTP/1.1\" 401 12 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:02:44 +0000] \"POST /auth/login HTTP/1.1\" 401 12 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:02:44 +0000] \"POST /auth/login HTTP/1.1\" 401 12 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"ok":0,"errmsg":"Authentication failed.","code":18,"codeName":"AuthenticationFailed","operationTime":"6608007154278334465","$clusterTime":{"clusterTime":"6608007154278334465","signature":{"hash":"eHMJhmI0QQTHsCSDpwDLzIyvEQ8=","keyId":"6605495143871021057"}},"name":"MongoError","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:02:45 +0000] \"GET / HTTP/1.1\" 200 408 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:02:45 +0000] \"GET /home HTTP/1.1\" 200 408 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"ok":0,"errmsg":"Authentication failed.","code":18,"codeName":"AuthenticationFailed","operationTime":"6608007197228007425","$clusterTime":{"clusterTime":"6608007197228007425","signature":{"hash":"ZuhNadYLPwmohRJTBK0RVL4o3jY=","keyId":"6605495143871021057"}},"name":"MongoError","level":"info"}
+{"ok":0,"errmsg":"Authentication failed.","code":18,"codeName":"AuthenticationFailed","operationTime":"6608007197228007425","$clusterTime":{"clusterTime":"6608007197228007425","signature":{"hash":"ZuhNadYLPwmohRJTBK0RVL4o3jY=","keyId":"6605495143871021057"}},"name":"MongoError","level":"info"}
+{"ok":0,"errmsg":"Authentication failed.","code":18,"codeName":"AuthenticationFailed","operationTime":"6608007244472647681","$clusterTime":{"clusterTime":"6608007244472647681","signature":{"hash":"ILhPof5bhCOuam7Sz6bJgwtFYDw=","keyId":"6605495143871021057"}},"name":"MongoError","level":"info"}
+{"ok":0,"errmsg":"Authentication failed.","code":18,"codeName":"AuthenticationFailed","operationTime":"6608007244472647681","$clusterTime":{"clusterTime":"6608007244472647681","signature":{"hash":"ILhPof5bhCOuam7Sz6bJgwtFYDw=","keyId":"6605495143871021057"}},"name":"MongoError","level":"info"}
+{"ok":0,"errmsg":"Authentication failed.","code":18,"codeName":"AuthenticationFailed","operationTime":"6608007244472647681","$clusterTime":{"clusterTime":"6608007244472647681","signature":{"hash":"ILhPof5bhCOuam7Sz6bJgwtFYDw=","keyId":"6605495143871021057"}},"name":"MongoError","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:04:47 +0000] \"GET /getApiKey?app_name=hello HTTP/1.1\" 200 144 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:04:48 +0000] \"POST /auth/register HTTP/1.1\" 200 5 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:05:00 +0000] \"POST /auth/register HTTP/1.1\" 200 5 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"login request for vishnu recieved","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:05:01 +0000] \"POST /auth/login HTTP/1.1\" 200 6 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"login request for zyx recieved","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:05:03 +0000] \"POST /auth/login HTTP/1.1\" 200 5 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:05:03 +0000] \"POST /auth/register HTTP/1.1\" 401 12 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:05:03 +0000] \"POST /auth/register HTTP/1.1\" 401 12 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:05:03 +0000] \"POST /auth/login HTTP/1.1\" 401 12 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:05:03 +0000] \"POST /auth/login HTTP/1.1\" 401 12 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:05:09 +0000] \"GET / HTTP/1.1\" 200 408 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:05:09 +0000] \"GET /home HTTP/1.1\" 200 408 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:10:59 +0000] \"GET /getApiKey?app_name=hello HTTP/1.1\" 200 144 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:11:03 +0000] \"POST /auth/register HTTP/1.1\" 200 6 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:11:16 +0000] \"POST /auth/register HTTP/1.1\" 200 5 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"login request for vishnu recieved","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:11:19 +0000] \"POST /auth/login HTTP/1.1\" 200 6 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"login request for zyx recieved","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:11:21 +0000] \"POST /auth/login HTTP/1.1\" 200 5 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:11:21 +0000] \"POST /auth/register HTTP/1.1\" 401 12 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:11:21 +0000] \"POST /auth/register HTTP/1.1\" 401 12 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:11:21 +0000] \"POST /auth/login HTTP/1.1\" 401 12 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:11:21 +0000] \"POST /auth/login HTTP/1.1\" 401 12 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:11:28 +0000] \"GET / HTTP/1.1\" 200 408 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:11:28 +0000] \"GET /home HTTP/1.1\" 200 408 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:12:37 +0000] \"GET /getApiKey?app_name=hello HTTP/1.1\" 200 144 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:12:39 +0000] \"POST /auth/register HTTP/1.1\" 200 6 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:12:41 +0000] \"POST /auth/register HTTP/1.1\" 200 5 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"login request for vishnu recieved","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:12:44 +0000] \"POST /auth/login HTTP/1.1\" 200 6 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"login request for zyx recieved","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:12:49 +0000] \"POST /auth/login HTTP/1.1\" 200 5 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:12:49 +0000] \"POST /auth/register HTTP/1.1\" 401 12 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:12:49 +0000] \"POST /auth/register HTTP/1.1\" 401 12 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:12:49 +0000] \"POST /auth/login HTTP/1.1\" 401 12 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:12:49 +0000] \"POST /auth/login HTTP/1.1\" 401 12 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:13:02 +0000] \"GET / HTTP/1.1\" 200 408 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [03/Oct/2018:06:13:02 +0000] \"GET /home HTTP/1.1\" 200 408 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}

@@ -8,7 +8,7 @@
     "eslintwatch": "npm run eslint --watch",
     "eslint": "esw src",
     "open-src": "nodemon --exec babel-node src/authServer.js --no-deprecation",
-    "test": "logging='off' db='testAuthDb' nyc mocha --require babel-polyfill --compilers js:babel-register --no-deprecation --timeout 20000 --exit"
+    "test": "logging='off' connection='mongodb://tester:password123@ds121593.mlab.com:21593/testusersdb' db='testusersdb' nyc mocha --require babel-polyfill --compilers js:babel-register --no-deprecation --timeout 20000 --exit"
   },
   "author": "vishnu",
   "license": "ISC",
